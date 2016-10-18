@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cars>
+  <car id="1">
+    <mark>Volvo</mark>
+    <age>3</age>
+    <motor_value>250</motor_value>
+    <price>5000</price>
+    <custom_price>1750</custom_price>
+    <full_price>6750</full_price>
+    <receipt_time>18/10/2016</receipt_time>
+    <return_time>01/11/2016</return_time>
+  </car>
+  <car id="2">
+    <mark>BMW</mark>
+    <age>6</age>
+    <motor_value>150</motor_value>
+    <price>3500</price>
+    <custom_price>608</custom_price>
+    <full_price>5608</full_price>
+    <receipt_time>18/10/2016</receipt_time>
+    <return_time>01/11/2016</return_time>
+  </car>
+  <car id="3">
+    <mark>Mercedes</mark>
+    <age>3</age>
+    <motor_value>210</motor_value>
+    <price>5700</price>
+    <custom_price>1970</custom_price>
+    <full_price>6970</full_price>
+    <receipt_time>18/10/2016</receipt_time>
+    <return_time>01/11/2016</return_time>
+  </car>
+  <car id="4">
+    <mark>Renault</mark>
+    <age>2</age>
+    <motor_value>200</motor_value>
+    <price>6500</price>
+    <custom_price>3350</custom_price>
+    <full_price>8350</full_price>
+    <receipt_time>18/10/2016</receipt_time>
+    <return_time>01/11/2016</return_time>
+  </car>
+  <car id="5">
+    <mark>Subaru</mark>
+    <age>1</age>
+    <motor_value>130</motor_value>
+    <price>8000</price>
+    <custom_price>8130</custom_price>
+    <full_price>13130</full_price>
+    <receipt_time>18/10/2016</receipt_time>
+    <return_time>01/11/2016</return_time>
+  </car>
+</cars>
