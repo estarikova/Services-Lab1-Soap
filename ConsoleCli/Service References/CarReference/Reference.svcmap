@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4f409ef3-77ec-4ddb-b196-0f6954eab758" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="624117e0-a083-433d-9d6f-6e756f10e969" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
   <ClientOptions>
     <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
     <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
@@ -19,13 +19,13 @@
     <ServiceContractMappings />
   </ClientOptions>
   <MetadataSources>
-    <MetadataSource Address="http://localhost/CarService/CarDelivery.svc" Protocol="http" SourceId="1" />
+    <MetadataSource Address="http://localhost:8000/CarDelivery.svc" Protocol="http" SourceId="1" />
   </MetadataSources>
   <Metadata>
-    <MetadataFile FileName="CarDelivery.disco" MetadataType="Disco" ID="2d0ae49e-8bb4-4c76-8ed2-9ee85e96d209" SourceId="1" SourceUrl="http://localhost/CarService/CarDelivery.svc?disco" />
-    <MetadataFile FileName="CarDelivery.xsd" MetadataType="Schema" ID="2c225858-de33-46db-b406-e54fbdafb02c" SourceId="1" SourceUrl="http://localhost/CarService/CarDelivery.svc?xsd=xsd0" />
-    <MetadataFile FileName="CarDelivery.wsdl" MetadataType="Wsdl" ID="7584b987-1a30-4903-8ab3-b696176ab592" SourceId="1" SourceUrl="http://localhost/CarService/CarDelivery.svc?wsdl" />
-    <MetadataFile FileName="CarDelivery1.xsd" MetadataType="Schema" ID="5807282a-a00a-4c0f-ae7a-2dcabf59724d" SourceId="1" SourceUrl="http://localhost/CarService/CarDelivery.svc?xsd=xsd1" />
+    <MetadataFile FileName="CarDelivery.wsdl" MetadataType="Wsdl" ID="7cd042f2-8dfa-4bf1-9b00-bf114313cdfb" SourceId="1" SourceUrl="http://localhost:8000/CarDelivery.svc?wsdl" />
+    <MetadataFile FileName="CarDelivery.xsd" MetadataType="Schema" ID="366fa91f-6fb6-455c-8f56-1f391781c576" SourceId="1" SourceUrl="http://localhost:8000/CarDelivery.svc?xsd=xsd1" />
+    <MetadataFile FileName="CarDelivery1.xsd" MetadataType="Schema" ID="4f68d24e-1a94-45a2-9c73-354d5c606f38" SourceId="1" SourceUrl="http://localhost:8000/CarDelivery.svc?xsd=xsd0" />
+    <MetadataFile FileName="CarDelivery.disco" MetadataType="Disco" ID="56575fd4-ebf5-4700-bf29-2a8ee77de97d" SourceId="1" SourceUrl="http://localhost:8000/CarDelivery.svc?disco" />
   </Metadata>
   <Extensions>
     <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />

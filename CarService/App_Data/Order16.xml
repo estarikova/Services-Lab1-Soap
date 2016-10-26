@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<Order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <id>16</id>
+  <mark>15</mark>
+  <age>15</age>
+  <price>15</price>
+  <motorValue>15</motorValue>
+  <customPrice>2</customPrice>
+  <fullPrice>5002</fullPrice>
+  <receiptTime>26-10-2016</receiptTime>
+  <returnTime>09-11-2016</returnTime>
+</Order>

@@ -22,16 +22,22 @@ namespace ConsoleCli.CarReference {
         System.Threading.Tasks.Task<string> TestConnectionAsync();
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICarDelivery/AddData", ReplyAction="http://tempuri.org/ICarDelivery/AddDataResponse")]
-        string AddData(string mark, int age, int price, int motor_value);
+        string AddData(string mark, int age, int price, int motorValue);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICarDelivery/AddData", ReplyAction="http://tempuri.org/ICarDelivery/AddDataResponse")]
-        System.Threading.Tasks.Task<string> AddDataAsync(string mark, int age, int price, int motor_value);
+        System.Threading.Tasks.Task<string> AddDataAsync(string mark, int age, int price, int motorValue);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICarDelivery/PrintOutput", ReplyAction="http://tempuri.org/ICarDelivery/PrintOutputResponse")]
-        string PrintOutput(string id);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICarDelivery/PrintOrder", ReplyAction="http://tempuri.org/ICarDelivery/PrintOrderResponse")]
+        string PrintOrder(int id);
         
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICarDelivery/PrintOutput", ReplyAction="http://tempuri.org/ICarDelivery/PrintOutputResponse")]
-        System.Threading.Tasks.Task<string> PrintOutputAsync(string id);
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICarDelivery/PrintOrder", ReplyAction="http://tempuri.org/ICarDelivery/PrintOrderResponse")]
+        System.Threading.Tasks.Task<string> PrintOrderAsync(int id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICarDelivery/PrintAllOrders", ReplyAction="http://tempuri.org/ICarDelivery/PrintAllOrdersResponse")]
+        string PrintAllOrders();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICarDelivery/PrintAllOrders", ReplyAction="http://tempuri.org/ICarDelivery/PrintAllOrdersResponse")]
+        System.Threading.Tasks.Task<string> PrintAllOrdersAsync();
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -69,20 +75,28 @@ namespace ConsoleCli.CarReference {
             return base.Channel.TestConnectionAsync();
         }
         
-        public string AddData(string mark, int age, int price, int motor_value) {
-            return base.Channel.AddData(mark, age, price, motor_value);
+        public string AddData(string mark, int age, int price, int motorValue) {
+            return base.Channel.AddData(mark, age, price, motorValue);
         }
         
-        public System.Threading.Tasks.Task<string> AddDataAsync(string mark, int age, int price, int motor_value) {
-            return base.Channel.AddDataAsync(mark, age, price, motor_value);
+        public System.Threading.Tasks.Task<string> AddDataAsync(string mark, int age, int price, int motorValue) {
+            return base.Channel.AddDataAsync(mark, age, price, motorValue);
         }
         
-        public string PrintOutput(string id) {
-            return base.Channel.PrintOutput(id);
+        public string PrintOrder(int id) {
+            return base.Channel.PrintOrder(id);
         }
         
-        public System.Threading.Tasks.Task<string> PrintOutputAsync(string id) {
-            return base.Channel.PrintOutputAsync(id);
+        public System.Threading.Tasks.Task<string> PrintOrderAsync(int id) {
+            return base.Channel.PrintOrderAsync(id);
+        }
+        
+        public string PrintAllOrders() {
+            return base.Channel.PrintAllOrders();
+        }
+        
+        public System.Threading.Tasks.Task<string> PrintAllOrdersAsync() {
+            return base.Channel.PrintAllOrdersAsync();
         }
     }
 }
