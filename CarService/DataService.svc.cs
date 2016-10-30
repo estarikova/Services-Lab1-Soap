@@ -40,10 +40,16 @@ namespace CarService
             {
                 for (int i = 1; i <= j; i++)
                 {
-                    result += PrintOrder(i) + "";
+                    if (i != j)
+                    {
+                        result += PrintOrder(i) + ",";
+                    }
+                    else
+                    {
+                        result += PrintOrder(i);
+                    }
                 }
             }
-            result = "[" + result + "]";
             return result;
         }
 

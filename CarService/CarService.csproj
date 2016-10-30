@@ -16,7 +16,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <WcfConfigValidationEnabled>True</WcfConfigValidationEnabled>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <UseIISExpress>true</UseIISExpress>
+    <UseIISExpress>false</UseIISExpress>
     <IISExpressSSLPort />
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
@@ -65,6 +65,11 @@
     <Content Include="App_Data\Order2.xml" />
     <Content Include="App_Data\Order3.xml" />
     <Content Include="App_Data\Order4.xml" />
+    <Content Include="App_Data\Order5.xml" />
+    <Content Include="App_Data\Order6.xml" />
+    <Content Include="App_Data\Order7.xml" />
+    <Content Include="App_Data\Order8.xml" />
+    <Content Include="App_Data\Order9.xml" />
     <Content Include="CarDelivery.svc" />
     <Content Include="DataService.svc" />
     <Content Include="Web.config" />
@@ -107,7 +112,7 @@
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>20847</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:8000</IISUrl>
+          <IISUrl>http://localhost/CarService</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>http://localhost/delivery</CustomServerUrl>
