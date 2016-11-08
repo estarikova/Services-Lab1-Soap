@@ -7,13 +7,13 @@ namespace CarService
     public interface IDataService
     {
         [OperationContract]
-        string Add(Order order);
+        Order Add(Order order);
 
         [OperationContract]
-        string PrintOrder(int id);
+        Order PrintOrder(int id);
 
         [OperationContract]
-        string PrintAllOrders();
+        Order[] PrintAllOrders();
     }
     
 }

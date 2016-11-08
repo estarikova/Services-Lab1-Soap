@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Xml.Serialization;
 using System.IO;
-using System.Web.Script.Serialization;
 
 namespace CarService
 {
@@ -10,47 +9,37 @@ namespace CarService
 
         string startOfPath = AppDomain.CurrentDomain.BaseDirectory + "\\App_Data\\Order";
         string endOfPath = ".xml";
-        public string Add(Order order)
+        public Order Add(Order order)
         {
             XmlSerializer formatter = new XmlSerializer(typeof(Order));
 
-            using (FileStream fileStream = new FileStream(startOfPath+order.id+endOfPath, FileMode.OpenOrCreate))
+            using (FileStream fileStream = new FileStream(startOfPath + order.id + endOfPath, FileMode.OpenOrCreate))
             {
                 formatter.Serialize(fileStream, order);
             }
-            string result = "Your order was added<br><br>";
-            result += PrintOrder(order.id)+"<br>";
-            return result;
+            Order savedOrder = PrintOrder(order.id);
+            return savedOrder;
 
         }
 
-        public string PrintOrder(int id)
+        public Order PrintOrder(int id)
         {
             Order order = Find(id);
-            string result = new JavaScriptSerializer().Serialize(order);
-            return result;
+            return order;
         }
 
-        public string PrintAllOrders()
+        public Order[] PrintAllOrders()
         {
             string path = AppDomain.CurrentDomain.BaseDirectory + "\\App_Data\\";
             int j = new DirectoryInfo(path).GetFiles().Length;
-            string result="";
-            if (j >= 1)
-            {
-                for (int i = 1; i <= j; i++)
+            Order[] orders = new Order[j];
+            for (int i = 0; i < j; i++) {
+                if (j >= 1)
                 {
-                    if (i != j)
-                    {
-                        result += PrintOrder(i) + ",";
-                    }
-                    else
-                    {
-                        result += PrintOrder(i);
-                    }
+                    orders[i] = Find(i+1);
                 }
             }
-            return result;
+            return orders;
         }
 
 

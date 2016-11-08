@@ -1,0 +1,16 @@
+﻿body {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+div.form1 {
+    margin: 20px 0;
+}
+span {
+    margin: 10px 0;
+    font-family: arial;
+}
+input {
+    margin: 10px;
+    min-height: 35px;
+    min-width:200px;
+}

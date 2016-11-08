@@ -2,11 +2,11 @@
 <Order xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <id>4</id>
   <mark>Subaru</mark>
-  <age>3</age>
+  <age>2</age>
   <price>7500</price>
-  <motorValue>1500</motorValue>
-  <customPrice>3000</customPrice>
-  <fullPrice>8000</fullPrice>
-  <receiptTime>26-10-2016</receiptTime>
-  <returnTime>09-11-2016</returnTime>
+  <motorValue>450</motorValue>
+  <customPrice>3975</customPrice>
+  <fullPrice>8975</fullPrice>
+  <receiptTime>08.11.2016</receiptTime>
+  <returnTime>22.11.2016</returnTime>
 </Order>

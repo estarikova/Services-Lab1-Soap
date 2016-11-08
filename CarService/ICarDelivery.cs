@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Runtime.Serialization;
 using System.ServiceModel;
-using System.ServiceModel.Web;
 
 namespace CarService
 {
@@ -10,22 +9,22 @@ namespace CarService
     {
 
         [OperationContract]
-        [WebInvoke(Method="GET", UriTemplate="TC")]
+       // [WebInvoke(Method = "GET", UriTemplate = "TC")]
         string TestConnection();
 
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "AddData?mark={mark}&age={age}&price={price}&motorValue={motorValue}")]
-        string AddData(string mark, int age, int price, int motorValue);
+       // [WebInvoke(Method = "GET", UriTemplate = "AddData?mark={mark}&age={age}&price={price}&motorValue={motorValue}")]
+        Order AddData(Order order);
 
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "PrintOrder?id={id}")]
-        string PrintOrder(int id);
+        //[WebInvoke(Method = "GET", UriTemplate = "PrintOrder?id={id}")]
+        Order PrintOrder(int id);
 
         [OperationContract]
-        [WebInvoke(Method = "GET", UriTemplate = "PrintAllOrders")]
-        string PrintAllOrders();
+        //[WebInvoke(Method = "GET", UriTemplate = "PrintAllOrders")]
+        Order[] PrintAllOrders();
 
-        
+
     }
     [DataContract]
     [Serializable]
@@ -61,4 +60,3 @@ namespace CarService
 
 
 }
-

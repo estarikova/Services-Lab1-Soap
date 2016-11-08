@@ -12,15 +12,8 @@ namespace CarService
             return "Test Connection Status: Ok";
         }
 
-        public string AddData(string mark, int age, int price, int motorValue)
+        public Order AddData(Order order)
         {
-
-            Order order = new Order();
-
-            order.mark = mark;
-            order.age = age;
-            order.price = price;
-            order.motorValue = motorValue;
             order.customPrice = CalculateCustomPrice(order);
             order.fullPrice = CalculateFullPrice(order);
             order.receiptTime = CalculateReceiptTime();
@@ -28,19 +21,20 @@ namespace CarService
             order.id = CountId();
 
 
-            string result = client.Add(order);
+            Order result = client.Add(order);
             return result;
         }
 
-        public string PrintOrder(int id)
+        public Order PrintOrder(int id)
         {
-            string result = client.PrintOrder(id);
+            Order result = client.PrintOrder(id);
+
             return result;
         }
 
-        public string PrintAllOrders()
+        public Order[] PrintAllOrders()
         {
-            string result = client.PrintAllOrders();
+            Order[] result = client.PrintAllOrders();
             return result;
         }
 
@@ -77,7 +71,7 @@ namespace CarService
         {
             int id;
             string path = AppDomain.CurrentDomain.BaseDirectory + "\\App_Data\\";
-            id = new DirectoryInfo(path).GetFiles().Length+1;
+            id = new DirectoryInfo(path).GetFiles().Length + 1;
             return id;
         }
 
